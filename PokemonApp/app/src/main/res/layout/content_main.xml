@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".PokemonApp"
+    tools:showIn="@layout/activity_main">
+
+
+    <LinearLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter the pokemon to join your team" />
+
+        <EditText
+            android:id="@+id/searchPoke"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"
+            android:singleLine="true"
+            android:textColor="#000" />
+
+        <Button
+            android:text="Go"
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/pokeError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/pokeImg1"
+                android:layout_width="146dp"
+                android:layout_height="158dp" />
+
+            <TextView
+                android:id="@+id/pokeTxt1"
+                android:layout_width="195dp"
+                android:layout_height="129dp"
+                android:layout_margin="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/pokeImg2"
+                android:layout_width="146dp"
+                android:layout_height="158dp" />
+
+            <TextView
+                android:id="@+id/pokeTxt2"
+                android:layout_width="195dp"
+                android:layout_height="129dp"
+                android:layout_margin="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/pokeImg3"
+                android:layout_width="146dp"
+                android:layout_height="158dp" />
+
+            <TextView
+                android:id="@+id/pokeTxt3"
+                android:layout_width="195dp"
+                android:layout_height="129dp"
+                android:layout_margin="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
